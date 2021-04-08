@@ -24,7 +24,7 @@ const defaultValues = {
       dark: '#666',
       medium: '#999',
       light: '#ddd',
-      ultraLight: '#eaeaea',
+      ultraLight: '#FFFFFF',
     },
     action: {
       conversion: {
@@ -99,11 +99,11 @@ const defaultValues = {
     mg10: baseValueToRem(20), // 80px
   },
 
-  cornerRadius: {
-    sharp: baseValueToRem(0), // 0px
-    primary: baseValueToRem(1), // 4px
-    secondary: baseValueToRem(2), // 8px
-    pill: baseValueToRem(100), // 100%
+  borderRadius: {
+    primary: baseValueToRem(0),
+    secondary: baseValueToRem(100), 
+    tertiary: baseValueToRem(1),
+    circle: baseValueToRem(100),  
   },
 
   borderWidth: {

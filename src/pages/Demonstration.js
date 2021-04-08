@@ -1,8 +1,10 @@
-// Modules
-import React, { useState } from 'react';
-import { ThemeProvider } from 'styled-components'
 
-// Themes
+import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faSearch} from '@fortawesome/free-solid-svg-icons';
+
+
 import productOne from '../theme/productOne';
 import productTwo from '../theme/productTwo';
 import productThree from '../theme/productThree';
@@ -12,14 +14,16 @@ import Ubuntu from '../components/logos/ubuntu';
 import Slides from '../components/logos/slides';
 
 
-// Styled
-import * as Styled from '../components/Styled';
+
+import * as Styled from '../components/styled-components/index'
+
 
 
 
 function Demonstration() {
   let urlBanner = ""
   const [currentTheme, setCurrentTheme] = useState(productOne);
+  const iconSearch = <FontAwesomeIcon icon={faSearch} className='icon-search' />
 
   const products = [productOne, productTwo, productThree]
 
@@ -66,29 +70,32 @@ function Demonstration() {
         </Styled.Header>
         <Styled.Title>
           <div className="container">
-            <p>Aplicando Design System com Styled Components em ReactJS</p>
+            <p>Modelo de Design System</p>
           </div>
+          <form action='/' method='post'>
+            <input type='text' name='pesquisa' placeholder='O que você procura?' />
+            <button type='submit'>{iconSearch}</button>
+          </form>
         </Styled.Title>
         <Styled.BannerWrapper image={urlBanner}/>
           <Styled.Information>
             <div className="container">
               <p>
-                Por <span>Jessica Machado e Nicolas Troles</span>, postado em <span>28 de agosto de 2020.</span>
+                Lorem <span>Ipsum</span> Dolor <span>sit amet</span>
               </p>
             </div>
           </Styled.Information>
-
           <Styled.Content>
             <div className="container">
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <button><a href='https://medium.com/' rel="noopener noreferrer" target='_blank'>Ver mais</a></button>
+            <button><a href='https://medium.com/' rel="noopener noreferrer" target='_blank'>Lorem Ipsum</a></button>
             </div>
           </Styled.Content>
         <Styled.Footer>
           <h2>Design System</h2>
         </Styled.Footer>
-     </Styled.Wrapper>
+    </Styled.Wrapper>
     </ThemeProvider>
   );
 }

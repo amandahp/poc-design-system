@@ -97,26 +97,19 @@ const defaultValues = {
     mg8: baseValueToRem(16), // 64px
     mg9: baseValueToRem(18), // 72px
     mg10: baseValueToRem(20), // 80px
+    mg20: baseValueToRem(2250), // 80px
   },
 
-  cornerRadius: {
-    sharp: baseValueToRem(0), // 0px
-    primary: baseValueToRem(1), // 4px
-    secondary: baseValueToRem(2), // 8px
-    pill: baseValueToRem(100), // 100%
+  borderRadius: {
+    primary: baseValueToRem(1),
+    secondary: baseValueToRem(4), 
+    tertiary: baseValueToRem(100),
+    circle: baseValueToRem(100), 
   },
 
   borderWidth: {
     thin: baseValueToRem(0.25), // 1px
     thick: baseValueToRem(0.5), // 2px
-  },
-
-  sizeBtn: {
-    small: baseValueToRem(8),
-    normal: baseValueToRem(10),
-    medium: baseValueToRem(11),
-    large: baseValueToRem(13),
-    defaultHeight: baseValueToRem(10),
   },
 };
 
