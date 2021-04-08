@@ -4,8 +4,8 @@ const baseValueToRem = (multiplicator) => {
 
 const defaultValues = {
   fontFamily: {
-    primary: 'MyriadPro',
-    secondary: 'OpenSans',
+    primary: 'Buda',
+    secondary: 'Inria Sans',
   },
 
   fontWeight: {
@@ -15,9 +15,10 @@ const defaultValues = {
   },
 
   color: {
-    primary: '#472D75',
-    secondary: '#6F42B6',
-    tertiary: '#ED676D',
+    primary: '#FF0A5C',
+    secondary:'#FFD6E4',
+    tertiary: '#F50052',
+    default: '#FF4785',
     neutral: {
       ultraDark: '#333',
       dark: '#666',

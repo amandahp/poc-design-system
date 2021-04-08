@@ -119,7 +119,7 @@ export const Content = styled.div`
     }
 
     button {
-      background: ${theme.color.secondary};
+      background: ${theme.color.primary};
       color: ${theme.color.neutral.ultraDark};
       padding: ${theme.padding.pd4} ${theme.padding.pd7};
       margin: 0 auto;

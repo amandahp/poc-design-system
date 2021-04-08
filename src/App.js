@@ -1,7 +1,4 @@
 import Demonstration from "./pages/Demonstration";
-import "./App.css"
-
-
 
 function App() {
   return (

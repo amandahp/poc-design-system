@@ -9,7 +9,7 @@ import productThree from '../theme/productThree';
 
 import Trello from '../components/logos/trello';
 import Ubuntu from '../components/logos/ubuntu';
-import Udacity from '../components/logos/udacity';
+import Slides from '../components/logos/slides';
 
 
 // Styled
@@ -18,9 +18,19 @@ import * as Styled from '../components/Styled';
 
 
 function Demonstration() {
+  let urlBanner = ""
   const [currentTheme, setCurrentTheme] = useState(productOne);
 
   const products = [productOne, productTwo, productThree]
+
+  if (currentTheme === productOne){
+    urlBanner = "https://images.pexels.com/photos/175773/pexels-photo-175773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  } else if (currentTheme === productTwo){
+    urlBanner = "https://images.pexels.com/photos/50570/sandstone-the-wave-rock-nature-50570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  } else {
+    urlBanner="https://images.pexels.com/photos/2156884/pexels-photo-2156884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  }
+
 
   return (
     <ThemeProvider theme={currentTheme}>
@@ -32,7 +42,7 @@ function Demonstration() {
             )}{currentTheme === productTwo && (
                 <Ubuntu />
             )}{currentTheme === productThree && (
-                <Udacity />
+                <Slides />
             )}
             <form>
               {products.map((product, index) => {
@@ -59,7 +69,7 @@ function Demonstration() {
             <p>Aplicando Design System com Styled Components em ReactJS</p>
           </div>
         </Styled.Title>
-        <Styled.BannerWrapper image='https://static.vecteezy.com/system/resources/previews/000/693/768/non_2x/digital-connecting-banner-technology-polygon-background-vector.jpg'/>
+        <Styled.BannerWrapper image={urlBanner}/>
           <Styled.Information>
             <div className="container">
               <p>
@@ -70,12 +80,8 @@ function Demonstration() {
 
           <Styled.Content>
             <div className="container">
-
-            <h2>O que é Design System?</h2>
-            <p>Essa é uma pergunta difícil, mas gosto de pensar que Design System é um padrão desenvolvido que contém todo o Design da sua aplicação mapeado e documentado. Ele é como se fosse a API do Design em que você consome os componentes e estilos para montar suas telas, facilitando demais a vida dos desenvolvedores na construção do seu produto</p>
-            <h2>O que é React?</h2>
-            <p>React é uma fantástica biblioteca JavaScript de código aberto com foco em criar interfaces de usuário para páginas web. Sua estrutura é voltada para criação e reutilização de componentes, o que nos permite uma boa abstração de interface.</p>
-            <p>React foi desenvolvido pelo Facebook e lançado em 2013, além de ser uma biblioteca super popular no mundo Javascript, ela tem sido usada por grandes companhias ao redor do mundo como:</p>
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <button><a href='https://medium.com/' rel="noopener noreferrer" target='_blank'>Ver mais</a></button>
             </div>
           </Styled.Content>
