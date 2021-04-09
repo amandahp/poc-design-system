@@ -30,10 +30,16 @@ export const Title = styled.div`
         height: 30px;
         border: 2px solid ${theme.color.primary};
         border-radius: ${theme.borderRadius.primary};
+        &:focus {
+          box-shadow: 0 0 0 0;
+          border: 2px solid ${theme.color.primary};
+          outline: 0;
+        }
       }
       .icon-search{
         color: ${theme.color.neutral.ultraLight};
       }
+
       
     }
   `}
