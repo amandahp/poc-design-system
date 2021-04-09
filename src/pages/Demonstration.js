@@ -100,7 +100,7 @@ function Demonstration() {
               <div className="container">
               <h2>Lorem ipsum</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <button><a href='https://medium.com/' rel="noopener noreferrer" target='_blank'>Lorem Ipsum</a></button>
+              <button><a href='https://www.google.com.br/'>Lorem Ipsum</a></button>
               </div>
             </Styled.Content>
           <Styled.Footer>
