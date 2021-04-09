@@ -72,32 +72,32 @@ const defaultValues = {
   },
 
   padding: {
-    pd0: baseValueToRem(0), // 0px
-    pd1: baseValueToRem(1), // 4px
-    pd2: baseValueToRem(2), // 8px
-    pd3: baseValueToRem(3), // 12px
-    pd4: baseValueToRem(4), // 16px
-    pd5: baseValueToRem(6), // 24px
-    pd6: baseValueToRem(8), // 32px
-    pd7: baseValueToRem(10), // 40px
-    pd8: baseValueToRem(12), // 48px
-    pd9: baseValueToRem(14), // 56px
-    pd10: baseValueToRem(16), // 64px
+    pd0: baseValueToRem(0),
+    pd1: baseValueToRem(1),
+    pd2: baseValueToRem(2),
+    pd3: baseValueToRem(3), 
+    pd4: baseValueToRem(4), 
+    pd5: baseValueToRem(6), 
+    pd6: baseValueToRem(8), 
+    pd7: baseValueToRem(10), 
+    pd8: baseValueToRem(12), 
+    pd9: baseValueToRem(14), 
+    pd10: baseValueToRem(16), 
   },
 
   margin: {
-    mg0: baseValueToRem(0), // 0px
-    mg1: baseValueToRem(2), // 8px
-    mg2: baseValueToRem(4), // 16px
-    mg3: baseValueToRem(6), // 24px
-    mg4: baseValueToRem(8), // 32px
-    mg5: baseValueToRem(10), // 40px
-    mg6: baseValueToRem(12), // 48px
-    mg7: baseValueToRem(14), // 56px
-    mg8: baseValueToRem(16), // 64px
-    mg9: baseValueToRem(18), // 72px
-    mg10: baseValueToRem(20), // 80px
-    mg20: baseValueToRem(2250), // 80px
+    mg0: baseValueToRem(0),
+    mg1: baseValueToRem(2),
+    mg2: baseValueToRem(4), 
+    mg3: baseValueToRem(6), 
+    mg4: baseValueToRem(8), 
+    mg5: baseValueToRem(10), 
+    mg6: baseValueToRem(12), 
+    mg7: baseValueToRem(14), 
+    mg8: baseValueToRem(16), 
+    mg9: baseValueToRem(18), 
+    mg10: baseValueToRem(20), 
+    mg20: baseValueToRem(2250), 
   },
 
   borderRadius: {
@@ -108,8 +108,8 @@ const defaultValues = {
   },
 
   borderWidth: {
-    thin: baseValueToRem(0.25), // 1px
-    thick: baseValueToRem(0.5), // 2px
+    thin: baseValueToRem(0.25), 
+    thick: baseValueToRem(0.5), 
   },
 };
 
